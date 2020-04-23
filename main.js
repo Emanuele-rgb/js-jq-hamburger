@@ -1,5 +1,11 @@
-var apriHam = $('.close');
+var apriHam = $('.header-right > a');
+var closeIcon = $('.hamburger-menu .close')
+var menu = $('.hamburger-menu');
 
 apriHam.click(function() {
-  $('.hamburger-menu').fadeOut();
+  menu.addClass('active');
+});
+
+closeIcon.click(function() {
+  menu.removeClass('active');
 });
